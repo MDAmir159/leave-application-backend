@@ -1,0 +1,101 @@
+GET http://localhost:3000/subscriber
+
+###
+GET http://localhost:3000/subscriber/624f1b334532f1cd1a01240f
+
+###
+POST http://localhost:3000/subscriber
+Content-Type: application/json
+
+{
+    "name" : "Alkatraz",
+    "subscriberToChannel" : "Hell CAT lovers. I love you all"
+}
+
+
+###
+PATCH http://localhost:3000/subscriber/624f1b334532f1cd1a01240f
+Content-Type: application/json
+
+{
+    "name" : "New ne ewwwww",
+    "subscriberToChannel" : "Hell CAT lover"
+}
+
+###
+DELETE http://localhost:3000/subscriber/623d7787de53afd4b35d1b80
+
+###
+GET http://localhost:3000/ingradients/all_ingradients
+
+###
+POST http://localhost:3000/ingradients/new_ingradients
+Content-Type: application/json
+
+{
+    "name" : "Alkatraz",
+    "image" : "https://unsplash.com/photos/doeWwiscUPI"
+}
+
+###
+GET http://localhost:3000/welcome
+
+###
+GET http://localhost:3000/faculty
+
+###
+GET http://localhost:3000/faculty/6312c8628b5ece5cf4ec2ae6
+
+###
+POST http://localhost:3000/faculty
+Content-Type: application/json
+
+{
+    "name" : "Boris Johnson",
+    "userType" : "faculty",
+    "designation" : "Associate Professor",
+    "email" : "boris@yahoo.com",
+    "password" : "boris123",
+    "Department" : "Department of ETE",
+    "university" : "University of Madrid",
+    "totalAvailableVacations" : 17
+}
+
+###
+POST http://localhost:3000/faculty/login
+Content-Type: application/json
+
+{
+    "email" : "smith1997@yahoo.com",
+    "password" : "smith123"
+}
+###
+GET http://localhost:3000/application/hr
+
+###
+POST http://localhost:3000/application
+Content-Type: application/json
+
+{
+    "name" : "John Smith",
+    "userId" : "6312c8628b5ece5cf4ec2ae6",
+    "userType": "faculty",
+    "designation": "Professor",
+    "Department": "Department of CSE",
+    "requestedDaysVacation" : 5,
+    "reasonForLeave" : "My leg has been broken. Doctor prescribed me to have a bed rest for a couple of days",
+    "totalAvailableVacations" : 17,
+    "isAcceptedByHR" : false,
+    "isAcceptedByRegistrar" : false,
+    "isAcceptedByVC" : false
+}
+
+###
+PATCH http://localhost:3000/application/63192f6e89b2957a2c1c8aa8
+Content-Type: application/json
+
+{
+    "userId" : "6314e4d65239e6710566f7e4",
+    "userType" : "hr",
+    "isRejected" : true
+}

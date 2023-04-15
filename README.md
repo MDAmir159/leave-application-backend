@@ -9,6 +9,7 @@ This is the backend repository of the [Leave-application](https://github.com/MDA
 
 - [Node.js](http://nodejs.org/) - evented I/O for the backend
 - [Express](https://expressjs.com/) - fast node.js network app framework
+- [MongoDB](https://www.mongodb.com/) -database
 
 ## Installation
 
